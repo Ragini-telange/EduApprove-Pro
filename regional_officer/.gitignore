@@ -1,0 +1,19 @@
+# Environment files
+.env
+.env.local
+.env.*.local
+*.env
+*.env.local
+
+# Node
+node_modules/
+dist/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+env/
+venv/

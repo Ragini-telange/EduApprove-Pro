@@ -1,0 +1,88 @@
+import { NotificationItem } from '../types';
+
+export const mockNotificationsList: NotificationItem[] = [
+  {
+    id: 1,
+    institution_id: 'INS001',
+    title: 'Correction Required — APP-2026-1019',
+    message:
+      'Application APP-2026-1019 (Course Extension) requires correction. Discrepancy detected in Faculty Cadre Ratio for Mechanical Engineering. Resubmit before 27 Oct 2026.',
+    notification_type: 'Correction Required',
+    severity: 'critical',
+    is_read: false,
+    related_entity_type: 'application',
+    related_entity_id: 'APP-2026-1019',
+    created_at: '2026-10-22T08:30:00Z',
+    time_ago: '2h ago',
+  },
+  {
+    id: 2,
+    institution_id: 'INS001',
+    title: 'Document Expiring — Land Lease Agreement',
+    message:
+      'Statutory Campus Lease Agreement expires in 12 days (03 Nov 2026). Ensure timely upload of renewal deed to maintain valid land title compliance.',
+    notification_type: 'Document Expiring',
+    severity: 'warning',
+    is_read: false,
+    related_entity_type: 'document',
+    related_entity_id: 'Lease Agreement',
+    created_at: '2026-10-22T06:15:00Z',
+    time_ago: '4h ago',
+  },
+  {
+    id: 3,
+    institution_id: 'INS001',
+    title: 'Compliance Deadline Approaching',
+    message:
+      'Mandatory compliance "Industry-Academia MoU Endorsement" is due in 7 days on 29 Oct 2026.',
+    notification_type: 'Compliance',
+    severity: 'warning',
+    is_read: false,
+    related_entity_type: 'compliance',
+    related_entity_id: 'MoU-Endorsement',
+    created_at: '2026-10-22T04:00:00Z',
+    time_ago: '6h ago',
+  },
+  {
+    id: 4,
+    institution_id: 'INS001',
+    title: 'Application Updated — APP-2026-1024',
+    message:
+      'Application APP-2026-1024 (New Institution) has successfully cleared initial document screening and moved to Scrutiny Committee Review.',
+    notification_type: 'Application',
+    severity: 'info',
+    is_read: true,
+    related_entity_type: 'application',
+    related_entity_id: 'APP-2026-1024',
+    created_at: '2026-10-21T14:20:00Z',
+    time_ago: '1d ago',
+  },
+  {
+    id: 5,
+    institution_id: 'INS001',
+    title: 'EVC Visit Inspection Team Confirmed',
+    message:
+      'Expert Visiting Committee (EVC) has confirmed physical on-site inspection for 20 Nov 2026 at 10:30 AM for Increase in Intake application (APP-2026-1008).',
+    notification_type: 'EVC Scheduled',
+    severity: 'info',
+    is_read: false,
+    related_entity_type: 'evc',
+    related_entity_id: 'EVC-2026-1008',
+    created_at: '2026-10-20T10:00:00Z',
+    time_ago: '2d ago',
+  },
+  {
+    id: 6,
+    institution_id: 'INS001',
+    title: 'Regulatory Fee Challan Reconciled',
+    message:
+      'Annual approval fee payment receipt #BH-2026-90412 has been reconciled by AICTE Finance Bureau.',
+    notification_type: 'System',
+    severity: 'success',
+    is_read: true,
+    related_entity_type: 'compliance',
+    related_entity_id: 'Fee-Challan',
+    created_at: '2026-10-18T12:00:00Z',
+    time_ago: '4d ago',
+  },
+];
